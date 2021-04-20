@@ -13,7 +13,7 @@ const forecast = (latitude, longitude, callback) => {
         } else {
             const degree = body.current.temperature
             const feelsLike = body.current.feelslike
-            callback(undefined, `${body.current.weather_descriptions[0]} .Currently out there is ${degree}. But it feels like ${feelsLike}`)
+            callback(undefined, `${body.current.weather_descriptions[0]}. Currently out there is ${degree}. But it feels like ${feelsLike}`)
         }
     })
 }
